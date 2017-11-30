@@ -16,7 +16,7 @@ In the "code" folder in this assignment you'll find the code which the other dev
 
 Implement a [hamburger menu](https://www.computerhope.com/jargon/h/hamburger-menu.htm) for mobile devices into the existing project. You need to figure out how to place the new feature in the existing project without breaking it.
 
-The hamburger menu should be implemented purely with CSS and on click, it should fold out the menu of the page. You can use a styled radio input tag to store the open/closed state of the menu. TODO - link to material from the lecture.
+The hamburger menu should be implemented purely with CSS and on click, it should fold out the menu of the page. You can use a styled checkbox input tag to store the open/closed state of the menu. The example from our lecture on this can be downloaded [here](https://drive.google.com/file/d/11cwkSDbY5qS2p0ZozFWXqyKxzs7-x-4j/view?usp=sharing)
 
 ### 3. Check your code!
 
