@@ -1,15 +1,58 @@
 header {
-  background: #FFDFE7;
+   background: #FFDFE7;
+ }
+
+ header a {
+   color: #FE3525;
+   font-family: BigJohn;
+   text-decoration: none;
+   padding: 10px;
+ }
+
+a{
+  display: flex;
+  flex-direction: column;
 }
 
-header a {
-  color: #FE3525;
-  font-family: BigJohn;
-  text-decoration: none;
-  padding: 10px;
+.hamburger-checkbox { /* Do not display the checkbox */
+  display: none;
 }
 
 .header-grid {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #FFDFE7;
 }
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) { /* The mobile-settings */
+  .hamburger-lable {
+      width: 35px;
+      height:5px;
+      display: block;
+      background-color: black;
+      margin: 8px 0;
+      cursor: pointer;
+  }
+
+  .menu {
+    background: #FFDFE7;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    left: -100%;
+    margin-top: 100px;
+    transition: all 0.3s ease-out;
+  }
+
+.hamburger-checkbox:checked + .menu {
+    left: 0;
+  }
+ }
